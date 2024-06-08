@@ -45,19 +45,25 @@ export default function Form() {
       class="flex xl:flex-row flex-col gap-6 px-12 py-8 xl:items-end items-center justify-center"
     >
       <Input
+        id="service-region"
         label="Service region"
+        aria-label="Service region"
         value={serviceRegion.value}
         onChange={(event) => (serviceRegion.value = event.currentTarget.value)}
         required
       />
       <Input
+        id="endpoint-id"
         label="Endpoint ID"
+        aria-label="Endpoint ID"
         value={endpointId.value}
         onChange={(event) => (endpointId.value = event.currentTarget.value)}
         required
       />
       <Input
+        id="subscription-key"
         label="Subscription Key"
+        aria-label="Subscription Key"
         value={subscriptionKey.value}
         onChange={(
           event,
